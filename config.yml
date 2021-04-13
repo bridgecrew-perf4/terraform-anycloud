@@ -1,0 +1,15 @@
+defaults:
+  project: anycloud
+  environment: demo
+  location: westeurope
+  resource_group:
+    name: ignyte-rg-networking
+  hub:
+    name: ignyte-hub
+    cidr: 10.0.0.0/16
+    dns: ""
+  firewall:
+    nat_rules:
+      - rule:
+          name: testrule
+      - rule:
